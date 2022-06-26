@@ -1,4 +1,4 @@
-module github.com/diegoluisi/${{values.component_id}}
+module github.com/vitor-savicki/${{values.component_id}}
 
 go 1.18
 

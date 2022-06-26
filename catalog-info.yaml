@@ -15,16 +15,16 @@ metadata:
     prometheus.io/rule: container_cpu_usage_seconds_total{namespace=${{values.component_id | dump}}}
     prometheus.io/alert: all
   links:
-    - url: https://${{values.component_id}}.diegoluisi.eti.br
+    - url: https://${{values.component_id}}.vitor-savicki.eti.br
       title: Website
       icon: Website
-    - url: https://grafana.diegoluisi.eti.br/
+    - url: https://grafana.vitor-savicki.eti.br/
       title: Dashboard
       icon: dashboard      
-    - url: https://alerts.diegoluisi.eti.br/
+    - url: https://alerts.vitor-savicki.eti.br/
       title: Alerts
       icon: alert 
-    - url: https://argocd.diegoluisi.eti.br/applications/${{values.env + "-" + values.component_id}}?resource=
+    - url: https://argocd.vitor-savicki.eti.br/applications/${{values.env + "-" + values.component_id}}?resource=
       title: ArgoCD
       icon: cloud
   tags:
